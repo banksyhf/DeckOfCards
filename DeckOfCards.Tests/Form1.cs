@@ -30,6 +30,8 @@ namespace DeckOfCards.Tests
             Deck.Shuffle(8);
 
             pictureBox1.Image = Deck.Cards[0].Image;
+
+            MessageBox.Show(Deck.Cards[0].Suit.Name);
         }
     }
 }
