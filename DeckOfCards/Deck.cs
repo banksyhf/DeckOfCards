@@ -40,9 +40,7 @@ namespace DeckOfCards
             _diamonds = new Diamonds();
             _spades = new Spades();
 
-            _cards = new List<Card>();
-
-            _cards.AddRange(Utils.GetCardsFromSuit(_clubs));
+            BuildDeck();
         }
 
         public void Shuffle(int shuffles)
@@ -68,6 +66,38 @@ namespace DeckOfCards
 
                 index -= 1;
             }
+        }
+
+        public void RemoveCard(int index)
+        {
+            _cards.RemoveAt(index);
+        }
+
+        public void RemoveCard(Card card)
+        {
+            _cards.Remove(card);
+        }
+
+        public void RemoveCards(params int[] indexes)
+        {
+            foreach (int i in indexes)
+                _cards.RemoveAt(i);
+        }
+
+        public void RemoveCards(params Card[] cards)
+        {
+            foreach (Card card in cards)
+                _cards.Remove(card);
+        }
+
+        public void BuildDeck()
+        {
+            _cards = new List<Card>();
+
+            _cards.AddRange(Utils.GetCardsFromSuit(_clubs));
+            _cards.AddRange(Utils.GetCardsFromSuit(_hearts));
+            _cards.AddRange(Utils.GetCardsFromSuit(_diamonds));
+            _cards.AddRange(Utils.GetCardsFromSuit(_spades));
         }
 
     }
