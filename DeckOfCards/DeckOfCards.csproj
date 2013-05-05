@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4ADC4C0-2CB6-4A73-B0DA-19BBF823C0B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeckOfCards</RootNamespace>
+    <AssemblyName>DeckOfCards</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Card.cs" />
+    <Compile Include="Suits\Clubs.cs" />
+    <Compile Include="Deck.cs" />
+    <Compile Include="Suits\Hearts.cs" />
+    <Compile Include="Suits\Spades.cs" />
+    <Compile Include="Suits\Diamonds.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\ISuit.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Clubs\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Diamonds\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Hearts\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Deck\Spades\9.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
