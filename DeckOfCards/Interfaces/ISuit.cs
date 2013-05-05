@@ -2,6 +2,7 @@
 {
     public interface ISuit
     {
+        string Name { get; }
         Card Ace { get; }
         Card Two { get; }
         Card Three { get; }

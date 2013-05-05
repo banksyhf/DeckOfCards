@@ -4,6 +4,10 @@ namespace DeckOfCards.Suits
 {
     public class Hearts : ISuit
     {
+        public string Name
+        {
+            get { return "Hearts"; }
+        }
         public Card Ace
         {
             get { return new Card("Ace", Utils.GetBitmap(1, this), this); }
