@@ -15,7 +15,7 @@ namespace DeckOfCards
 
             foreach (string imageName in names)
             {
-                if (imageName.Contains(cardNumber.ToString()) && imageName.Contains(suit.GetType().Name))
+                if (imageName.Contains(suit.GetType().Name + "." + cardNumber.ToString() + ".png"))
                 {
                     return new Bitmap(dll.GetManifestResourceStream(imageName));
                 }
